@@ -49,7 +49,7 @@ function compress(inputPath, outputPath) {
     );
 }
 
-//para rodar o programada digite no terminal: node app.js <nome da imagem-caminho> <tamanho da largura que quer>
-//ex: node app.js imagem.jpg 500
+//para rodar o programada digite no terminal: node app.js <nome da imagem-caminho> <tamanho da largura que quer> <grau de rotação>
+//ex: node app.js imagem.jpg 500 180
 
 resize(path, "./temp/output_resize.jpg", width, rotate);
