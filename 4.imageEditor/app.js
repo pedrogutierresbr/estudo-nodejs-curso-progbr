@@ -5,10 +5,12 @@ const fs = require("fs");
 
 let path = process.argv[2];
 let width = Number(process.argv[3]);
+let rotate = Number(process.argv[4]);
 
-function resize(inputPath, outputPath, width) {
+function resize(inputPath, outputPath, width, rotate) {
     sharp(inputPath)
         .resize({ width: width })
+        .rotate(rotate)
         .toFile(outputPath, (err) => {
             if (err) {
                 console.log(err);
@@ -50,4 +52,4 @@ function compress(inputPath, outputPath) {
 //para rodar o programada digite no terminal: node app.js <nome da imagem-caminho> <tamanho da largura que quer>
 //ex: node app.js imagem.jpg 500
 
-resize(path, "./temp/output_resize.jpg", width);
+resize(path, "./temp/output_resize.jpg", width, rotate);
