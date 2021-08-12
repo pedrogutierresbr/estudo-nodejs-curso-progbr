@@ -76,7 +76,7 @@ app.listen(PORT, () => {
 });
 ```
 
-![imagem1]()
+![imagem1](https://github.com/pedrogutierresbr/nodejs-curso-progbr/blob/main/assets/imagem1.png?raw=true)
 
 Como deve estar a divisão do diretório para este exemplo
 
